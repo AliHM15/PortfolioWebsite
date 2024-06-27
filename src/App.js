@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
 import Education from "./components/Education/Education";
+import Certification from "./components/Certification/Certification";
 import {
   BrowserRouter as Router,
   Route,
@@ -39,7 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/education" element={<Education />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/certification" element={<Certification />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
